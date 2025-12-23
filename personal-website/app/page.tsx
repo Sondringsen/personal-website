@@ -17,6 +17,9 @@ export default function Home() {
             <li>
               <Link href="/projects">Projects</Link>
             </li>
+            <li>
+              <Link href="/miscellaneous">Miscellaneous</Link>
+            </li>
           </ul>
         </div>
         <main className="col-span-7 relative flex min-h-screen flex-col justify-center px-8 py-20 md:px-16 lg:px-24">
