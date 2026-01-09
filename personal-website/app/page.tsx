@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import TableOfContentBase from '@/components/TableOfContentBase';
 
 export default function Home() {
   return (
@@ -7,20 +7,7 @@ export default function Home() {
       <div className="absolute left-8 top-0 h-32 w-px bg-gradient-to-b from-transparent via-accent/40 to-transparent md:left-16" />
       <div className="grid grid-cols-8 gap-4">
         <div className="flex items-center col-span-1 relative flex min-h-screen border-r border-accent">
-          <ul className="px-4 text-xl space-y-10">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/academics">Academics</Link>
-            </li>
-            <li>
-              <Link href="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link href="/miscellaneous">Miscellaneous</Link>
-            </li>
-          </ul>
+          <TableOfContentBase />
         </div>
         <main className="col-span-7 relative flex min-h-screen flex-col justify-center px-8 py-20 md:px-16 lg:px-24">
           <div className="max-w-2xl">

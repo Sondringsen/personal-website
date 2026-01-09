@@ -1,5 +1,5 @@
 // import Image from "next/image";
-import PDFRenderer from "@/components/pdf_renderer";
+import PDFRenderer from "@/components/PDFRenderer";
 
 export default function CV() {
     return (
