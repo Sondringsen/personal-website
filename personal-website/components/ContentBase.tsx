@@ -3,6 +3,27 @@
 import { Tab } from '@/types/types';
 import { Dispatch, SetStateAction } from 'react';
 
+
+
+interface TabButtonProps {
+    tab: Tab;
+    setActiveTab: Dispatch<SetStateAction<number | null>>;
+}
+const TabButton = ({ tab, setActiveTab }: TabButtonProps) => {
+    return (
+        <button onClick={() => setActiveTab(tab.index)} className="hover:cursor-pointer text-left group">
+            <span className="underline underline-offset-4 decoration-accent group-hover:decoration-2 transition-all">
+                {tab.metaData.title}
+            </span>
+            <span className="block text-xs text-gray-500 mt-1">
+                First published: {tab.metaData.published.toLocaleDateString()}
+                <span className="mx-2">·</span>
+                Last updated: {tab.metaData.lastUpdated.toLocaleDateString()}
+            </span>
+        </button>
+    );
+};
+
 interface ContentBaseProps {
     tabs: Tab[];
     activeTab: number | null;
@@ -17,7 +38,7 @@ export default function ContentBase({ tabs, activeTab, setActiveTab }: ContentBa
                 <ul className="flex flex-col gap-4">
                     {tabs.map((tab) => (
                     <li key={tab.index}>
-                        <button onClick={() => setActiveTab(tab.index)} className="hover:cursor-pointer">{tab.label}</button>
+                        <TabButton tab={tab} setActiveTab={setActiveTab} />
                     </li>
                 ))}
                 </ul>
