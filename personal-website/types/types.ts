@@ -10,12 +10,14 @@ export interface Tab {
     index: number,
     metaData: TabMetaData,
     component_type: ComponentType,
-    url?: string
+    url?: string,
+    slug: string
 }
 
 export interface ArticleMetadata {
     id: number,
     title: string,
+    slug: string,
     lastUpdated: string,
     published: string,
     section: string,

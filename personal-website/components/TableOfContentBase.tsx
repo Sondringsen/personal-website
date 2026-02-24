@@ -10,10 +10,10 @@ export default function TableOfContentBase() {
                 <Link href="/">Home</Link>
             </li>
             <li>
-                <Link href="/academics">Academics</Link>
+                <Link href="/about-me">About Me</Link>
             </li>
             <li>
-                <Link href="/projects">Projects</Link>
+                <Link href="/data-science">Data Science</Link>
             </li>
             <li>
                 <Link href="/miscellaneous">Miscellaneous</Link>

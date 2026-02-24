@@ -2,12 +2,12 @@ import ArticleList from '@/components/ArticleList';
 import { getTabsForSection } from '@/services/metadataService';
 import SectionLayout from '@/components/SectionLayout';
 
-export default function Miscellaneous() {
-    const tabs = getTabsForSection('miscellaneous');
+export default function DataScience() {
+    const tabs = getTabsForSection('data-science');
 
     return (
         <SectionLayout>
-            <ArticleList tabs={tabs} section="miscellaneous" />
+            <ArticleList tabs={tabs} section="data-science" />
         </SectionLayout>
     );
 }
