@@ -4,8 +4,21 @@ export interface TabMetaData {
     published: Date
 }
 
+export type ComponentType = 'html' | 'markdown' | 'pdf' | 'journey';
+
 export interface Tab {
-    index: number, 
+    index: number,
     metaData: TabMetaData,
-    component: React.ReactNode
+    component_type: ComponentType,
+    url?: string
+}
+
+export interface ArticleMetadata {
+    id: number,
+    title: string,
+    lastUpdated: string,
+    published: string,
+    section: string,
+    component_type: ComponentType,
+    url?: string
 }

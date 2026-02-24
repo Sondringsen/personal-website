@@ -2,8 +2,10 @@
 
 import { Tab } from '@/types/types';
 import { Dispatch, SetStateAction } from 'react';
-
-
+import HtmlRenderer from '@/components/HtmlRenderer';
+import MarkdownRenderer from '@/components/MarkdownRenderer';
+import PDFRenderer from '@/components/PDFRenderer';
+import Journey from '@/app/academics/journey';
 
 interface TabButtonProps {
     tab: Tab;
@@ -23,6 +25,25 @@ const TabButton = ({ tab, setActiveTab }: TabButtonProps) => {
         </button>
     );
 };
+
+function renderTabContent(tab: Tab): React.ReactNode {
+    switch (tab.component_type) {
+        case 'html':
+            return tab.url ? <HtmlRenderer htmlUrl={tab.url} /> : null;
+        case 'markdown':
+            return tab.url ? <MarkdownRenderer markdownUrl={tab.url} /> : null;
+        case 'pdf':
+            return tab.url ? (
+                <div className="h-screen w-full">
+                    <PDFRenderer pdfUrl={tab.url} />
+                </div>
+            ) : null;
+        case 'journey':
+            return <Journey />;
+        default:
+            return null;
+    }
+}
 
 interface ContentBaseProps {
     tabs: Tab[];
@@ -46,7 +67,7 @@ export default function ContentBase({ tabs, activeTab, setActiveTab }: ContentBa
         </div>
         <div className="p-4 flex justify-center">
             {activeTab !== null && (
-                <>{tabs[activeTab].component}</>
+                <>{renderTabContent(tabs[activeTab])}</>
             )}
         </div>
     </div>

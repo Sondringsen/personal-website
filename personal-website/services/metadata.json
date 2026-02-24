@@ -1,0 +1,57 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Projects",
+      "lastUpdated": "2026-01-09",
+      "published": "2026-01-09",
+      "section": "projects",
+      "component_type": "markdown",
+      "url": "/projects/projects.md"
+    },
+    {
+      "id": 2,
+      "title": "Journey",
+      "lastUpdated": "2026-01-09",
+      "published": "2026-01-09",
+      "section": "academics",
+      "component_type": "journey"
+    },
+    {
+      "id": 3,
+      "title": "CV",
+      "lastUpdated": "2026-01-09",
+      "published": "2026-01-09",
+      "section": "academics",
+      "component_type": "pdf",
+      "url": "/CV.pdf"
+    },
+    {
+      "id": 4,
+      "title": "Estimating Eigenvalues in Empirical Data",
+      "lastUpdated": "2026-02-22",
+      "published": "2026-02-22",
+      "section": "academics",
+      "component_type": "html",
+      "url": "/data_science/empirical_eigenvalues.html"
+    },
+    {
+      "id": 5,
+      "title": "Favorite Books",
+      "lastUpdated": "2026-01-09",
+      "published": "2026-01-09",
+      "section": "miscellaneous",
+      "component_type": "markdown",
+      "url": "/miscellaneous/favorite_books.md"
+    },
+    {
+      "id": 6,
+      "title": "Favorite Movies",
+      "lastUpdated": "2026-01-09",
+      "published": "2026-01-09",
+      "section": "miscellaneous",
+      "component_type": "markdown",
+      "url": "/miscellaneous/favorite_movies.md"
+    }
+  ]
+}

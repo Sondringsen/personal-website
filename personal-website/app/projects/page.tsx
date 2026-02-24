@@ -2,18 +2,12 @@
 
 import TableOfContentBase from "@/components/TableOfContentBase";
 import { useState } from "react";
-import { Tab } from "@/types/types";
-import MarkdownRenderer from "@/components/MarkdownRenderer";
 import ContentBase from "@/components/ContentBase";
+import { getTabsForSection } from "@/services/metadataService";
 
 export default function Projects() {
     const [activeTab, setActiveTab] = useState<number | null>(null);
-    const tabs: Tab[] = [
-        {
-            index: 0, 
-            metaData: {title: 'Projects', lastUpdated: new Date('2026-01-09'), published: new Date('2026-01-09')}, 
-            component: <MarkdownRenderer markdownUrl="/projects/projects.md" />}
-    ];
+    const tabs = getTabsForSection('projects');
 
     return (
         <div className="relative min-h-screen overflow-hidden">
