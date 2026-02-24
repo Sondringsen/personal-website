@@ -1,7 +1,10 @@
 'use client';
 
 import ReactMarkdown from 'react-markdown';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 import { useEffect, useState } from "react";
+import 'katex/dist/katex.min.css';
 // import remarkGfm from 'remark-gfm';
 
 
@@ -17,8 +20,11 @@ export default function MarkdownRenderer({ markdownUrl }: { markdownUrl: string 
 
     
     return <div className="p-4 flex justify-center">
-        <div className="prose prose-sm">
-            <ReactMarkdown>
+        <div className="prose prose-sm max-w-none [&_.katex]:text-inherit">
+            <ReactMarkdown
+                remarkPlugins={[remarkMath]}
+                rehypePlugins={[rehypeKatex]}
+            >
                 {content}
             </ReactMarkdown>
          </div>
