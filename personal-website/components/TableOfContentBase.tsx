@@ -1,8 +1,5 @@
 import Link from 'next/link';
-// import { Tab } from '@/types/types';
-// import { Dispatch, SetStateAction } from 'react';
 
-// export default function TableOfContentBase({ tabs, setActiveTab }: { tabs: Tab[], setActiveTab: Dispatch<SetStateAction<number>> }) {
 export default function TableOfContentBase() {
     return (
         <ul className="px-4 text-xl space-y-10">

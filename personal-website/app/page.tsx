@@ -5,11 +5,11 @@ export default function Home() {
     <div className="relative min-h-screen overflow-hidden">
       <div className="absolute inset-0 bg-[#f0ede8] dark:bg-[#1a1816]" />
       <div className="absolute left-8 top-0 h-32 w-px bg-gradient-to-b from-transparent via-accent/40 to-transparent md:left-16" />
-      <div className="grid grid-cols-8 gap-4">
-        <div className="flex items-center col-span-1 relative flex min-h-screen border-r border-accent">
+      <div className="flex">
+        <div className="hidden md:flex items-center relative min-h-screen w-48 shrink-0 border-r border-accent">
           <TableOfContentBase />
         </div>
-        <main className="col-span-7 relative flex min-h-screen flex-col justify-center px-8 py-20 md:px-16 lg:px-24">
+        <main className="flex-1 relative flex min-h-screen flex-col justify-center px-8 py-20 md:px-16 lg:px-24">
           <div className="max-w-2xl">
             <h1 className="animate-fade-in font-[family-name:var(--font-serif)] text-4xl tracking-tight text-foreground md:text-5xl lg:text-6xl">
               Sondre Rogde
@@ -41,7 +41,7 @@ export default function Home() {
                 <span className="h-px w-4 bg-current transition-all group-hover:w-6" />
                 Email
               </a>
-              {/* <a
+              <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -49,7 +49,7 @@ export default function Home() {
               >
                 <span className="h-px w-4 bg-current transition-all group-hover:w-6" />
                 GitHub
-              </a> */}
+              </a>
               <a
                 href="https://www.linkedin.com/in/sondre-rogde-86717a1b8/"
                 target="_blank"
