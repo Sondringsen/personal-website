@@ -1,10 +1,12 @@
 import TableOfContentBase from '@/components/TableOfContentBase';
+import MobileNav from '@/components/MobileNav';
 
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <div className="absolute inset-0 bg-[#f0ede8] dark:bg-[#1a1816]" />
       <div className="absolute left-8 top-0 h-32 w-px bg-gradient-to-b from-transparent via-accent/40 to-transparent md:left-16" />
+      <MobileNav />
       <div className="flex">
         <div className="hidden md:flex items-center relative min-h-screen w-48 shrink-0 border-r border-accent">
           <TableOfContentBase />
@@ -42,7 +44,7 @@ export default function Home() {
                 Email
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/sondringsen"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-2 text-muted transition-colors hover:text-foreground"
