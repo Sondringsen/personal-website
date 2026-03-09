@@ -5,6 +5,7 @@
     {"id":3,"title":"Favorite Movies","slug":"favorite-movies","lastUpdated":"2026-01-09","published":"2026-01-09","section":"miscellaneous","component_type":"markdown","url":"/miscellaneous/favorite_movies.md"},
     {"id":4,"title":"CV","slug":"cv","lastUpdated":"2026-01-09","published":"2026-01-09","section":"about-me","component_type":"html","url":"/about_me/cv.html"},
     {"id":5,"title":"About Me","slug":"about-me","lastUpdated":"2026-01-09","published":"2026-01-09","section":"about-me","component_type":"markdown","url":"/about_me/about_me.md"},
-    {"id":6,"title":"Academic Journey","slug":"academic-journey","lastUpdated":"2026-01-09","published":"2026-01-09","section":"about-me","component_type":"markdown","url":"/about_me/academic_journey.md"}
+    {"id":6,"title":"Academic Journey","slug":"academic-journey","lastUpdated":"2026-01-09","published":"2026-01-09","section":"about-me","component_type":"markdown","url":"/about_me/academic_journey.md"},
+    {"id":6,"title":"Reading List","slug":"reading-list","lastUpdated":"2026-03-08","published":"2026-03-08","section":"miscellaneous","component_type":"markdown","url":"/miscellaneous/reading_list.md"}
   ]
 }
