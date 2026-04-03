@@ -7,6 +7,10 @@
     {"id":5,"title":"About Me","slug":"about-me","lastUpdated":"2026-01-09","published":"2026-01-09","section":"about-me","component_type":"markdown","url":"/about_me/about_me.md"},
     {"id":6,"title":"Academic Journey","slug":"academic-journey","lastUpdated":"2026-01-09","published":"2026-01-09","section":"about-me","component_type":"markdown","url":"/about_me/academic_journey.md"},
     {"id":7,"title":"Reading List","slug":"reading-list","lastUpdated":"2026-03-08","published":"2026-03-08","section":"miscellaneous","component_type":"markdown","url":"/miscellaneous/reading_list.md"},
-    {"id":8,"title":"Norsk Særoppgave","slug":"norsk-saeroppgave","lastUpdated":"2026-03-08","published":"2026-03-08","section":"miscellaneous","component_type":"markdown","url":"/miscellaneous/norwegian_self_study_thesis.md"}
+    {"id":8,"title":"Norsk Særoppgave","slug":"norsk-saeroppgave","lastUpdated":"2026-03-08","published":"2026-03-08","section":"miscellaneous","component_type":"markdown","url":"/miscellaneous/norwegian_self_study_thesis.md"},
+    {"id":9,"title":"Idiosyncratic Skew Arbitrage in Equity Options","slug":"idiosyncratic-skew-arbitrage-in-equity-options","lastUpdated":"2026-03-23","published":"2026-03-23","section":"data-science","component_type":"pdf","url":"/data_science/MSE244_Final_Report.pdf"},
+    {"id":10,"title":"Reinforcement Learning for Market Making: Dynamic Programming, Deep Q-Networks, and Soft Actor-Critic","slug":"reinforcement-learning-for-market-making","lastUpdated":"2026-03-23","published":"2026-03-23","section":"data-science","component_type":"pdf","url":"/data_science/CME241_Final_Report.pdf"},
+    {"id":11,"title":"Gin Rummy Down Under","slug":"gin-rummy-down-under","lastUpdated":"2026-03-31","published":"2026-03-31","section":"miscellaneous","component_type":"markdown","url":"/miscellaneous/gin_rummy_down_under.md"},
+    {"id":12,"title":"Gin Rummy","slug":"gin-rummy","lastUpdated":"2026-04-02","published":"2026-04-02","section":"data-science","component_type":"markdown","url":"/data_science/gin_rummy.md"}
   ]
 }
