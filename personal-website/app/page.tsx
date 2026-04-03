@@ -27,10 +27,13 @@ export default function Home() {
               <p>
                 I&apos;m a student, passionate about learning and building cool things. 
                 My academic interests are in AI, machine learning, data science, and statistics.
-                Whenever I get the chance, I like to run work out.
+                Whenever I get the chance, I like to run and work out. Most of all I like to spend time with my girlfriend.
               </p>
               <p>
-                Most of all I like to spend time with my girlfriend.
+                This webpage is a place for me to write about anything that interests me. 
+                Some of it will of course be of academic nature, but I also write about anything I 
+                find interesting at the moment. If you for any reason want to get in touch please
+                feel free to send me an email or contact me on LinkedIn.
               </p>
             </div>
             
@@ -61,6 +64,16 @@ export default function Home() {
                 <span className="h-px w-4 bg-current transition-all group-hover:w-6" />
                 LinkedIn
               </a>
+              <a
+                href="https://www.strava.com/athletes/137727079"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 text-muted transition-colors hover:text-foreground"
+              >
+                <span className="h-px w-4 bg-current transition-all group-hover:w-6" />
+                Strava
+              </a>
+              
             </div>
           </div>
         </main>
