@@ -10,8 +10,8 @@ I have previously written about my favorite books, so I thought I'd do the same 
 - **Shawshank Redemption** Everyone loves this and it is deserved.
 - **Good Will Hunting** Good movies often have one or two scenes you remember, Good Will Hunting has at least six. The dialogue is exceptional.
 - **A Man Called Ove** (the Swedish version) A reminder that we are all humans and some people who appear cold and cynical might have the biggest heart.
-- **The Intouchables** (the French version) A great story about an unlikely friendship. "O Captain! My Captain!"
-- **Dead Poets Society** Do everything with love and *live deliberately*.
+- **The Intouchables** (the French version) A great story about an unlikely friendship.
+- **Dead Poets Society** Do everything with love and *live deliberately*. "O Captain! My Captain!"
 - **Me Before You** Another story of how fast life can change for the worse and a reminder that we should all appreciate and be grateful for what we have.
 
 ## TV-shows
