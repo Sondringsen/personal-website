@@ -1,0 +1,160 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{makecell}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+
+\newcommand{\resumeSubheadingTwo}[4]{
+  \vspace{-2pt}
+  \renewcommand{\arraystretch}{1}
+    \begin{tabular*}{1.0\textwidth}[t]{p{0.8\textwidth}@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \textbf{\small #2}\\
+        \parbox[t]{0.8\textwidth}{
+        \setlength{\hangindent}{1em}
+        \hspace{1em}\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{5pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[bottom=0.0in, top=0.2in, left=0.3in, right=0.3in]{geometry}
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Sondre Rogde} \\ \vspace{1pt}
+    \small \href{tel:+1 650-444-7450}{ \raisebox{-0.1\height}\faPhone\ \underline{+1 650-444-7450} ~} \href{mailto:sondre@stanford.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{sondre@stanford.edu}} ~ 
+    \href{https://www.linkedin.com/in/sondre-rogde-86717a1b8/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{Sondre Rogde}} 
+    ~\raisebox{-0.2\height}\faMapMarker\ 47 Olmsted Rd, Stanford, CA 94305
+    \vspace{-15pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+    \resumeSubheadingTwo{Stanford University}{09 2025 - Current}{MSc in Computational and Mathematical Engineering - \textbf{GPA} - \textbf{4.0}\\Track: Mathematical and Computational Finance (Expected Graduation 06 2027)}{Palo Alto, US}
+    \vspace{-3pt}
+
+    \resumeSubheadingTwo{Norwegian University of Science and Technology (NTNU)}{08 2020 -- 06 2025}{Master of Science in Engineering - \textbf{GPA} - \textbf{4.8 (out of 5.0)}}{Trondheim, Norway}
+    \vspace{-3pt}
+  
+    \resumeSubheadingTwo{Harvard University}{08 2022 -- 06 2023}{Visiting Undergraduate Student - \textbf{GPA} - \textbf{4.0 (out of 4.0)}}{Cambridge, US}
+    \vspace{-10pt}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Work}
+    \resumeSubheadingTwo{Norges Bank Investment Management -- Risk Analytics Intern}{06 2024 -- 08 2024} {Predicted future volatility using explainable tree-based models. Implemented an ML-tool automating the process from data gathering to making predictions and evaluating the results.}{Oslo, Norway}
+
+    \resumeSubheadingTwo{DNB Markets -- Equity Research (Winter 24) \& Investment Banking Intern (Summer 23)}{S 2023 -- W 2024}{ER: Performed quantitative and qualitative analysis on listed equities in the energy sector.\\IB: Assisted on pitches, a buy-side deal and a carve-out at the M\&A-team and TMT-team.}{Oslo, Norway}
+    
+    % \resumeSubheadingTwo{DNB Markets -- Equity Research Intern}{01 2024 -- 03 2024}{Performed quantitative and qualitative analysis on listed equities in the energy sector.}{Oslo, Norway}
+    
+    % \resumeSubheadingTwo{DNB Markets -- Investment Banking Intern}{06 2023 -- 08 2023}{Assisted on pitches, a buy-side deal and a carve-out at the M\&A-team and TMT-team.}{Oslo, Norway}
+    
+    \resumeSubheadingTwo{NTNU -- Teaching Assistant}{2021 -- 2024}{Teaching assistant in three courses: Algorithms and Data Structures (Fall 24), Statistics (Fall 24), and Discrete Mathematics (Fall 21). Held exercise lectures and graded coursework.}{Trondheim, Norway}
+    \vspace{-10pt}
+    
+%-----------EXTRACURRICULAR---------------
+
+\section{Extracurricular}
+    \resumeSubheadingTwo{Kvasir - (Personal project 2-person team)}{05 2025 - Current}{Built a web app to automate data science projects using agentic AI. Kvasir is a multi-agent system based on a context graph that tracks data flow and orchestrates different agents to handle data cleaning, data structuring, analysis, and modeling.\\
+    Tech stack: Python FastAPI, React with TypeScript, PostgreSQL, Containerized in Docker.}{Oslo, Norway}
+    \vspace{-3pt}
+    
+    \resumeSubheadingTwo{ReLU NTNU -- Co-Founder and Head of Technology}{10 2023 -- 06 2025}{Co-founded a student organization devoted to solving problems for businesses by utilizing AI/ML. \\ Responsible for project follow-up and ensured projects met client needs.\\Implemented ML models to predict feed quantity for caged salmon. \\ Achieved 500,000 NOK (ca. 50,000 USD) in revenue within the first year.}{Trondheim, Norway}
+    \vspace{-10pt}
+
+\section{Research}
+    \resumeSubheadingTwo{Option Pricing with Deep Learning: A Long Short-Term Memory Approach}{08 2024 -- 10 2024}{Implemented LSTM and benchmark models and interpreted results using SHAP-values. \\Published in The Journal of Decisions in Economics and Finance.}{Trondheim, Norway}
+    \resumeSubheadingTwo{Modeling Stock Prices for Deep Hedging: A Comparison of Methods for Synthetic Data Generation}{01 2025 -- 06 2025}{Investigated the use of generative models for producing synthetic financial time series to train hedging agents. Compared methods including Schrödinger Bridge for Time Series, GANs, VAEs, and stochastic volatility models, finding SBTS most effective for reducing option risk.}{Trondheim, Norway}
+    \resumeSubheadingTwo{A Cross-Sectional Analysis of Market Efficiency with Stock-Specific Models and High-Frequency Data}{08 2024 12 2024}{Examined short-term pricing inefficiencies in U.S. equities using LSTM-based models. Found evidence against the weak-form efficient market hypothesis in several stocks, and identified firm characteristics (dividend yield, analyst coverage, earnings) that explain cross-sectional variation in inefficiency.}{Trondheim, Norway}
+    \vspace{-10pt}
+
+\section{Programming Skills}
+    \begin{itemize}
+        \item\textbf{\small{Languages: }}\small{Python (fluent), R (intermediate), SQL (intermediate)}
+        \vspace{-3pt}\item\textbf{\small{Libraries (high degree of familiarity): }}\small{Pandas, Numpy, scikit-learn, TensorFlow, PyTorch}
+    \end{itemize}
+    \vspace{-10pt}
+
+    
+\section{Awards and Miscellaneous}
+    \begin{itemize}
+        \item \small{Awarded Aker Scholarship. Norwegian top talent program. Full-funding for my studies at Stanford.}
+        \vspace{-3pt}
+        \vspace{-3pt}
+        \item \small{Finished half marathon in 1:35}
+    \end{itemize}
+
+
+
+\end{document}
+

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sondre Rogde — CV</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', serif;
+      font-size: 14px;
+      color: #222;
+      background: #f0ede8;
+      max-width: 780px;
+      margin: 48px auto;
+      padding: 0 32px 64px;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 18px;
+      font-size: 13px;
+      color: #444;
+    }
+
+    .contact a {
+      color: #444;
+      text-decoration: none;
+      border-bottom: 1px solid #bbb;
+    }
+
+    .contact a:hover { color: #000; border-bottom-color: #000; }
+
+    /* Sections */
+    section {
+      margin-top: 22px;
+    }
+
+    section h2 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #0F4539;
+      border-bottom: 1px solid #0E5484;
+      padding-bottom: 3px;
+      margin-bottom: 14px;
+    }
+
+    /* Entry rows */
+    .entry {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0 16px;
+      margin-bottom: 14px;
+    }
+
+    .entry-title {
+      font-weight: 700;
+      font-size: 13.5px;
+      color: #111;
+    }
+
+    .entry-date {
+      font-size: 12.5px;
+      color: #555;
+      white-space: nowrap;
+      text-align: right;
+      padding-top: 1px;
+    }
+
+    .entry-sub {
+      grid-column: 1 / 2;
+      font-size: 12.5px;
+      color: #444;
+      font-style: italic;
+      margin-top: 1px;
+    }
+
+    .entry-location {
+      grid-column: 2 / 3;
+      font-size: 12.5px;
+      color: #555;
+      text-align: right;
+      font-style: italic;
+    }
+
+    .entry-body {
+      grid-column: 1 / -1;
+      font-size: 13px;
+      color: #333;
+      margin-top: 3px;
+    }
+
+    /* Skills list */
+    ul.skills {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.skills li {
+      font-size: 13px;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    ul.skills li strong {
+      color: #111;
+    }
+
+    /* Awards list */
+    ul.awards {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    ul.awards li {
+      font-size: 13px;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    @media print {
+      body { margin: 0; padding: 24px 32px; font-size: 12px; }
+      header h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sondre Rogde</h1>
+    <div class="contact">
+      <a href="tel:+16504447450">+1 650-444-7450</a>
+      <a href="mailto:sondre@stanford.edu">sondre@stanford.edu</a>
+      <a href="https://www.linkedin.com/in/sondre-rogde-86717a1b8/" target="_blank">LinkedIn</a>
+      <span>47 Olmsted Rd, Stanford, CA 94305</span>
+    </div>
+  </header>
+
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+
+    <div class="entry">
+      <span class="entry-title">Stanford University</span>
+      <span class="entry-date">09 2025 – Current</span>
+      <span class="entry-sub">MSc in Computational and Mathematical Engineering — GPA 4.0<br>Track: Mathematical and Computational Finance (Expected Graduation 06 2027)</span>
+      <span class="entry-location">Palo Alto, US</span>
+    </div>
+
+    <div class="entry">
+      <span class="entry-title">Norwegian University of Science and Technology (NTNU)</span>
+      <span class="entry-date">08 2020 – 06 2025</span>
+      <span class="entry-sub">Master of Science in Engineering — GPA 4.8 (out of 5.0)</span>
+      <span class="entry-location">Trondheim, Norway</span>
+    </div>
+
+    <div class="entry">
+      <span class="entry-title">Harvard University</span>
+      <span class="entry-date">08 2022 – 06 2023</span>
+      <span class="entry-sub">Visiting Undergraduate Student — GPA 4.0 (out of 4.0)</span>
+      <span class="entry-location">Cambridge, US</span>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section>
+    <h2>Work</h2>
+
+    <div class="entry">
+      <span class="entry-title">Norges Bank Investment Management — Risk Analytics Intern</span>
+      <span class="entry-date">06 2024 – 08 2024</span>
+      <span class="entry-body">Predicted future volatility using explainable tree-based models. Implemented an ML-tool automating the process from data gathering to making predictions and evaluating the results.</span>
+      <span class="entry-location">Oslo, Norway</span>
+    </div>
+
+    <div class="entry">
+      <span class="entry-title">DNB Markets — Equity Research (Winter 24) &amp; Investment Banking Intern (Summer 23)</span>
+      <span class="entry-date">S 2023 – W 2024</span>
+      <span class="entry-body">ER: Performed quantitative and qualitative analysis on listed equities in the energy sector.<br>IB: Assisted on pitches, a buy-side deal and a carve-out at the M&amp;A-team and TMT-team.</span>
+      <span class="entry-location">Oslo, Norway</span>
+    </div>
+
+    <div class="entry">
+      <span class="entry-title">NTNU — Teaching Assistant</span>
+      <span class="entry-date">2021 – 2024</span>
+      <span class="entry-body">Teaching assistant in three courses: Algorithms and Data Structures (Fall 24), Statistics (Fall 24), and Discrete Mathematics (Fall 21). Held exercise lectures and graded coursework.</span>
+      <span class="entry-location">Trondheim, Norway</span>
+    </div>
+  </section>
+
+  <!-- Extracurricular -->
+  <section>
+    <h2>Extracurricular</h2>
+
+    <div class="entry">
+      <span class="entry-title">Kvasir — Personal project (2-person team)</span>
+      <span class="entry-date">05 2025 – Current</span>
+      <span class="entry-body">Built a web app to automate data science projects using agentic AI. Kvasir is a multi-agent system based on a context graph that tracks data flow and orchestrates different agents to handle data cleaning, data structuring, analysis, and modeling.<br>Tech stack: Python FastAPI, React with TypeScript, PostgreSQL, containerized in Docker.</span>
+      <span class="entry-location">Oslo, Norway</span>
+    </div>
+
+    <div class="entry">
+      <span class="entry-title">ReLU NTNU — Co-Founder and Head of Technology</span>
+      <span class="entry-date">10 2023 – 06 2025</span>
+      <span class="entry-body">Co-founded a student organization devoted to solving problems for businesses by utilizing AI/ML. Responsible for project follow-up and ensured projects met client needs. Implemented ML models to predict feed quantity for caged salmon. Achieved 500,000 NOK (ca. 50,000 USD) in revenue within the first year.</span>
+      <span class="entry-location">Trondheim, Norway</span>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section>
+    <h2>Research</h2>
+
+    <div class="entry">
+      <span class="entry-title">Option Pricing with Deep Learning: A Long Short-Term Memory Approach</span>
+      <span class="entry-date">08 2024 – 10 2024</span>
+      <span class="entry-body">Implemented LSTM and benchmark models and interpreted results using SHAP-values. Published in The Journal of Decisions in Economics and Finance.</span>
+      <span class="entry-location">Trondheim, Norway</span>
+    </div>
+
+    <div class="entry">
+      <span class="entry-title">Modeling Stock Prices for Deep Hedging: A Comparison of Methods for Synthetic Data Generation</span>
+      <span class="entry-date">01 2025 – 06 2025</span>
+      <span class="entry-body">Investigated the use of generative models for producing synthetic financial time series to train hedging agents. Compared methods including Schrödinger Bridge for Time Series, GANs, VAEs, and stochastic volatility models, finding SBTS most effective for reducing option risk.</span>
+      <span class="entry-location">Trondheim, Norway</span>
+    </div>
+
+    <div class="entry">
+      <span class="entry-title">A Cross-Sectional Analysis of Market Efficiency with Stock-Specific Models and High-Frequency Data</span>
+      <span class="entry-date">08 2024 – 12 2024</span>
+      <span class="entry-body">Examined short-term pricing inefficiencies in U.S. equities using LSTM-based models. Found evidence against the weak-form efficient market hypothesis in several stocks, and identified firm characteristics (dividend yield, analyst coverage, earnings) that explain cross-sectional variation in inefficiency.</span>
+      <span class="entry-location">Trondheim, Norway</span>
+    </div>
+  </section>
+
+  <!-- Programming Skills -->
+  <section>
+    <h2>Programming Skills</h2>
+    <ul class="skills">
+      <li><strong>Languages:</strong> Python (fluent), R (intermediate), SQL (intermediate)</li>
+      <li><strong>Libraries (high degree of familiarity):</strong> Pandas, NumPy, scikit-learn, TensorFlow, PyTorch</li>
+    </ul>
+  </section>
+
+  <!-- Awards -->
+  <section>
+    <h2>Awards and Miscellaneous</h2>
+    <ul class="awards">
+      <li>Awarded Aker Scholarship. Norwegian top talent program. Full-funding for my studies at Stanford.</li>
+      <li>Finished half marathon in 1:35.</li>
+    </ul>
+  </section>
+
+</body>
+</html>
