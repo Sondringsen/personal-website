@@ -14,6 +14,7 @@
     {"id":12,"title":"Gin Rummy","slug":"gin-rummy","lastUpdated":"2026-04-02","published":"2026-04-02","section":"data-science","component_type":"markdown","url":"/data_science/gin_rummy.md"},
     {"id":13,"title":"A Body Without a Mind: A Review of The Stranger by Albert Camus","slug":"a-body-without-a-mind","lastUpdated":"2026-04-03","published":"2026-04-03","section":"miscellaneous","component_type":"markdown","url":"/miscellaneous/book_review_the_stranger.md"},
     {"id":14,"title":"Håndjern av gull","slug":"handjern-av-gull","lastUpdated":"2026-04-04","published":"2026-04-04","section":"miscellaneous","component_type":"markdown","url":"/miscellaneous/golden_handcuffs.md"},
-    {"id":15,"title":"Kvasir: Automating Data Science with Multi-Agent AI","slug":"kvasir","lastUpdated":"2026-04-10","published":"2026-04-10","section":"data-science","component_type":"markdown","url":"/data_science/kvasir.md"}
+    {"id":15,"title":"Kvasir: Automating Data Science with Multi-Agent AI","slug":"kvasir","lastUpdated":"2026-04-10","published":"2026-04-10","section":"data-science","component_type":"markdown","url":"/data_science/kvasir.md"},
+    {"id":16,"title":"Option Pricing with Deep Learning: a Long Short-Term Memory Approach","slug":"option-pricing-deep-learning","lastUpdated":"2026-04-10","published":"2026-04-10","section":"data-science","component_type":"markdown","url":"/data_science/option_pricing_deep_learning.md"}
   ]
 }
