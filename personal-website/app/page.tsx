@@ -73,6 +73,7 @@ export default function Home() {
                 <span className="h-px w-4 bg-current transition-all group-hover:w-6" />
                 Strava
               </a>
+              <img src="ingeborg_og_sondre.jpeg" alt="A descriptive text about the image" />
               
             </div>
           </div>
