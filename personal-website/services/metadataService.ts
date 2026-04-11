@@ -11,7 +11,7 @@ export function getTabsForSection(section: string): Tab[] {
     const { articles } = metadataTyped;
     const sectionArticles = articles
         .filter((article) => article.section === section)
-        .sort((a, b) => a.id - b.id);
+        .sort((a, b) => new Date(b.published).getTime() - new Date(a.published).getTime());
 
     return sectionArticles.map((article, index) => ({
         index,
