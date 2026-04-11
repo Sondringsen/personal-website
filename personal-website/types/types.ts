@@ -11,7 +11,8 @@ export interface Tab {
     metaData: TabMetaData,
     component_type: ComponentType,
     url?: string,
-    slug: string
+    slug: string,
+    translations?: Record<string, string>
 }
 
 export interface ArticleMetadata {
@@ -22,5 +23,6 @@ export interface ArticleMetadata {
     published: string,
     section: string,
     component_type: ComponentType,
-    url?: string
+    url?: string,
+    translations?: Record<string, string>
 }

@@ -23,6 +23,7 @@ export function getTabsForSection(section: string): Tab[] {
         component_type: article.component_type,
         url: article.url,
         slug: article.slug,
+        translations: article.translations,
     }));
 }
 
@@ -43,6 +44,7 @@ export function getArticleByRoute(section: string, slug: string): Tab | null {
         component_type: article.component_type,
         url: article.url,
         slug: article.slug,
+        translations: article.translations,
     };
 }
 
