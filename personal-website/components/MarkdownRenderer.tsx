@@ -22,10 +22,22 @@ export default function MarkdownRenderer({ markdownUrl }: { markdownUrl: string 
 
     
     return <div className="p-4 flex justify-center">
-        <div className="prose prose-sm max-w-none [&_.katex]:text-inherit">
+        <div className="prose prose-sm max-w-none [&_.katex]:text-inherit [&_code]:before:content-none [&_code]:after:content-none">
             <ReactMarkdown
                 remarkPlugins={[remarkMath, remarkGemoji]}
                 rehypePlugins={[rehypeKatex, rehypeSlug]}
+                components={{
+                    code({ children, className, ...props }) {
+                        return (
+                            <code
+                                className={`bg-gray-100 dark:bg-gray-800 px-1 py-0.5 rounded text-sm font-mono${className ? ` ${className}` : ''}`}
+                                {...props}
+                            >
+                                {children}
+                            </code>
+                        );
+                    }
+                }}
             >
                 {content}
             </ReactMarkdown>
