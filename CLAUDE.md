@@ -29,7 +29,7 @@ No test suite is configured.
 ```
 app/
   page.tsx                    # Home
-  [section]/page.tsx          # Article listing  (data-science, about-me, miscellaneous)
+  [section]/page.tsx          # Article listing  (academic, about-me, miscellaneous)
   [section]/[slug]/page.tsx   # Article viewer (static-generated via generateStaticParams)
 ```
 

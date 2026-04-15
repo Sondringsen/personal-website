@@ -53,4 +53,4 @@ export function getAllArticleRoutes(): { section: string; slug: string }[] {
     return articles.map((a) => ({ section: a.section, slug: a.slug }));
 }
 
-export const VALID_SECTIONS = ['data-science', 'projects', 'miscellaneous'] as const;
+export const VALID_SECTIONS = ['academic', 'projects', 'miscellaneous'] as const;

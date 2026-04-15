@@ -1,3 +1,3 @@
 # About me
 
-some random thing
+Nothing here yet. I'll find the time to write something herer soon!
