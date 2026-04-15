@@ -3,11 +3,11 @@ import { getTabsForSection } from '@/services/metadataService';
 import SectionLayout from '@/components/SectionLayout';
 
 export default function DataScience() {
-    const tabs = getTabsForSection('data-science');
+    const tabs = getTabsForSection('academic');
 
     return (
         <SectionLayout>
-            <ArticleList tabs={tabs} section="data-science" />
+            <ArticleList tabs={tabs} section="academic" />
         </SectionLayout>
     );
 }

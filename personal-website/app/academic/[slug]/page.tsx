@@ -9,7 +9,7 @@ interface ArticlePageProps {
 
 export default async function AcademicsArticlePage({ params }: ArticlePageProps) {
     const { slug } = await params;
-    const article = getArticleByRoute('data-science', slug);
+    const article = getArticleByRoute('academic', slug);
 
     if (!article) {
         notFound();
@@ -26,6 +26,6 @@ export async function generateStaticParams() {
     const { getAllArticleRoutes } = await import('@/services/metadataService');
     const routes = getAllArticleRoutes();
     return routes
-        .filter((r) => r.section === 'data-science')
+        .filter((r) => r.section === 'academic')
         .map((r) => ({ slug: r.slug }));
 }
