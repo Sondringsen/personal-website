@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Instrument_Serif, DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const instrumentSerif = Instrument_Serif({
@@ -14,8 +15,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Sondre Røgde",
-  description: "Personal website of Sondre Røgde",
+  title: "Sondre Rogde",
+  description: "Personal website of Sondre Rogde",
 };
 
 export default function RootLayout({
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${instrumentSerif.variable} ${dmSans.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
