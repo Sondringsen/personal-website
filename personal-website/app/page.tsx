@@ -1,7 +1,38 @@
+'use client';
+
+import { useState } from 'react';
 import TableOfContentBase from '@/components/TableOfContentBase';
 import MobileNav from '@/components/MobileNav';
 
 export default function Home() {
+  const [unlocked, setUnlocked] = useState(false);
+  const [input, setInput] = useState('');
+  const [error, setError] = useState(false);
+
+  if (!unlocked) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[#f0ede8] dark:bg-[#1a1816]">
+        <div className="flex flex-col gap-4">
+          <input
+            type="password"
+            value={input}
+            onChange={e => { setInput(e.target.value); setError(false); }}
+            onKeyDown={e => {
+              if (e.key === 'Enter') {
+                if (input === 'tiny') setUnlocked(true);
+                else setError(true);
+              }
+            }}
+            placeholder="Password"
+            autoFocus
+            className="border border-accent bg-transparent px-4 py-2 text-foreground outline-none placeholder:text-muted"
+          />
+          {error && <p className="text-sm text-muted">Wrong password.</p>}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       <div className="absolute inset-0 bg-[#f0ede8] dark:bg-[#1a1816]" />
