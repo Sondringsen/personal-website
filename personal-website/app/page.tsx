@@ -1,37 +1,12 @@
 'use client';
 
-import { useState } from 'react';
 import TableOfContentBase from '@/components/TableOfContentBase';
 import MobileNav from '@/components/MobileNav';
+import Link from 'next/link';
+import { getQuoteOfTheDay } from '@/services/quotesService';
 
 export default function Home() {
-  const [unlocked, setUnlocked] = useState(false);
-  const [input, setInput] = useState('');
-  const [error, setError] = useState(false);
-
-  if (!unlocked) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-[#f0ede8] dark:bg-[#1a1816]">
-        <div className="flex flex-col gap-4">
-          <input
-            type="password"
-            value={input}
-            onChange={e => { setInput(e.target.value); setError(false); }}
-            onKeyDown={e => {
-              if (e.key === 'Enter') {
-                if (input === 'tiny') setUnlocked(true);
-                else setError(true);
-              }
-            }}
-            placeholder="Password"
-            autoFocus
-            className="border border-accent bg-transparent px-4 py-2 text-foreground outline-none placeholder:text-muted"
-          />
-          {error && <p className="text-sm text-muted">Wrong password.</p>}
-        </div>
-      </div>
-    );
-  }
+  const quoteOfTheDay = getQuoteOfTheDay();
 
   return (
     <div className="relative min-h-screen overflow-hidden">
@@ -103,9 +78,33 @@ export default function Home() {
                 <span className="h-px w-4 bg-current transition-all group-hover:w-6" />
                 Strava
               </a>
-              <img src="ingeborg_og_sondre.jpeg" alt="A descriptive text about the image" />
-              
             </div>
+
+            {/* Quote of the day */}
+            <div className="animate-fade-in-delay-3 mt-16 border-t border-accent/20 pt-10">
+              <Link
+                href="/miscellaneous/quotes"
+                className="text-xs uppercase tracking-widest text-muted hover:text-foreground transition-colors mb-4 inline-block"
+              >
+                Quote of the day →
+              </Link>
+              <blockquote className="font-[family-name:var(--font-serif)] text-lg italic leading-relaxed text-foreground/80">
+                &ldquo;{quoteOfTheDay.text}&rdquo;
+              </blockquote>
+              <p className="mt-3 text-sm text-muted">
+                — {quoteOfTheDay.author}
+                {(quoteOfTheDay.source || quoteOfTheDay.year) && (
+                  <>
+                    {', '}
+                    {quoteOfTheDay.source && <span className="italic">{quoteOfTheDay.source}</span>}
+                    {quoteOfTheDay.source && quoteOfTheDay.year && ' '}
+                    {quoteOfTheDay.year && <>({quoteOfTheDay.year})</>}
+                  </>
+                )}
+              </p>
+            </div>
+
+            <img src="ingeborg_og_sondre.jpeg" alt="A descriptive text about the image" className="mt-10" />
           </div>
         </main>
     </div>

@@ -5,6 +5,8 @@ import { Tab } from '@/types/types';
 import HtmlRenderer from '@/components/HtmlRenderer';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
 import PDFRenderer from '@/components/PDFRenderer';
+import QuotesClient from '@/components/QuotesClient';
+import { getAllQuotes, getAllTags } from '@/services/quotesService';
 
 interface ArticleContentProps {
     tab: Tab;
@@ -71,6 +73,8 @@ export default function ArticleContent({ tab }: ArticleContentProps) {
                     ) : null}
                 </>
             );
+        case 'quotes':
+            return <QuotesClient quotes={getAllQuotes()} tags={getAllTags()} />;
         default:
             return null;
     }

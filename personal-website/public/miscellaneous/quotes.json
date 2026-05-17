@@ -1,0 +1,77 @@
+{
+  "quotes": [
+    {
+      "id": 1, 
+      "text": "Any relic of the dead is precious, if they were valued living.",
+      "author": "Emily Bronte",
+      "source": "Wuthering Heights",
+      "year": 1847,
+      "tags": ["literatue"]
+    },
+    {
+      "id": 2, 
+      "text": "[...] [H]eaven did not seem to be my home; and I broke my heart with weeping to come back to earth; and the angels were so angry that they flung me out [...]",
+      "author": "Emily Bronte",
+      "source": "Wuthering Heights",
+      "year": 1847,
+      "tags": ["literatue"]
+    },
+    {
+      "id": 3,
+      "text": "One never forgets the taste of certain tears.",
+      "author": "Fyodor Dostoevsky",
+      "source": null,
+      "year": null,
+      "tags": ["literatue"]
+    },
+    {
+      "id": 4,
+      "text": "Just as there are no atheists in a foxhole, there are no libertarians in a financial crisis.",
+      "author": "Many sources",
+      "source": null,
+      "year": null,
+      "tags": ["economics"]
+    },
+    {
+      "id": 5,
+      "text": "If a statue is ever erected to honour the person who has done most for American investors the hands-down choice should be Jack Bogle",
+      "author": "Warren Buffet",
+      "source": "Berkshire Hathaway AGM",
+      "year": 2017,
+      "tags": ["economics"]
+    },
+    {
+      "id": 6,
+      "text": "He who fights monsters must be careful lest he become a monster himself. For if you gaze into the abyss, the abyss will gaze back at you.",
+      "author": "Friedrich Nietzsche",
+      "source": "Beyond Good and Evil",
+      "year": 1886,
+      "tags": ["philosophy"]
+    },
+    {
+      "id": 7,
+      "text": "You will always be fond of me. I represent to you all the sins you never had the courage to commit.",
+      "author": "Oscar Wilde",
+      "source": "The Picture of Dorain Gray",
+      "year": 1890,
+      "tags": ["literatue"]
+    },
+    {
+      "id": 8,
+      "text": "Every saint has a past, and every sinner has a future.",
+      "author": "Oscar Wilde",
+      "source": "The Picture of Dorain Gray",
+      "year": 1890,
+      "tags": ["literatue"]
+    },
+    {
+      "id": 9,
+      "text": "But how could you live and have no story to tell?",
+      "author": "Fyodor Dostoevsky",
+      "source": "White Nights",
+      "year": 1848,
+      "tags": ["literatue"]
+    }
+    
+  ]
+}

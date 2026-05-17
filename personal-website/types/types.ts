@@ -4,7 +4,7 @@ export interface TabMetaData {
     published: Date
 }
 
-export type ComponentType = 'html' | 'markdown' | 'pdf' | 'journey';
+export type ComponentType = 'html' | 'markdown' | 'pdf' | 'quotes';
 
 export interface Tab {
     index: number,
