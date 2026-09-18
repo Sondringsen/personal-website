@@ -71,7 +71,14 @@
       "source": "White Nights",
       "year": 1848,
       "tags": ["literatue"]
+    },
+    {
+      "id": 10,
+      "text": "If you only do what you can do, you will never be more than you are now.",
+      "author": "Master Shifu",
+      "source": "Kung Fu Panda",
+      "year": 2008,
+      "tags": ["movies"]
     }
-    
   ]
 }

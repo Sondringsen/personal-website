@@ -14,6 +14,8 @@
     {"id":16,"title":"Option Pricing with Deep Learning: a Long Short-Term Memory Approach","slug":"option-pricing-deep-learning","lastUpdated":"2026-04-10","published":"2026-04-10","section":"academic","component_type":"markdown","url":"/academic/option_pricing_deep_learning_en.md"},
     {"id":17,"title":"Book Review of Naked Money by Charles Wheelan","slug":"book-review-naked-money","lastUpdated":"2026-04-12","published":"2026-04-12","section":"miscellaneous","component_type":"markdown","url":"/miscellaneous/book_review_naked_money_en.md","translations":{"no": "/miscellaneous/book_review_naked_money_no.md"}},
     {"id":18,"title":"Favorite Books, Movies and TV Shows","slug":"favorite-books-movies-shows","lastUpdated":"2026-04-14","published":"2026-04-14","section":"miscellaneous","component_type":"markdown","url":"/miscellaneous/favorite_books_movies_shows_en.md"},
-    {"id":19,"title":"Quotes","slug":"quotes","lastUpdated":"2026-05-16","published":"2026-05-16","section":"miscellaneous","component_type":"quotes"}
+    {"id":19,"title":"Quotes","slug":"quotes","lastUpdated":"2026-05-16","published":"2026-05-16","section":"miscellaneous","component_type":"quotes"},
+    {"id":20,"title":"Synthetic Data Generation Using Topological Loss for Deep Hedging","slug":"synthetic-data-topo-loss-deep-hedging","lastUpdated":"2026-09-18","published":"2026-09-18","section":"academic","component_type":"pdf","url":"/academic/MSE342_Final_Project_en.pdf"},
+    {"id":21,"title":"Building and Profiling a Small GPT-2 Training Pipeline in CUDA and MPI","slug":"building-profiling-gpt2","lastUpdated":"2026-09-18","published":"2026-09-18","section":"academic","component_type":"pdf","url":"/academic/CME213_Final_Project_en.pdf"}
   ]
 }
