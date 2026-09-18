@@ -10,7 +10,7 @@ const metadataTyped = metadata as MetadataSchema;
 export function getTabsForSection(section: string): Tab[] {
     const { articles } = metadataTyped;
     const sectionArticles = articles
-        .filter((article) => article.section === section)
+        .filter((article) => article.section === section && article.show)
         .sort((a, b) => new Date(b.published).getTime() - new Date(a.published).getTime());
 
     return sectionArticles.map((article, index) => ({

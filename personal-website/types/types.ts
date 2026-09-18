@@ -22,6 +22,7 @@ export interface ArticleMetadata {
     lastUpdated: string,
     published: string,
     section: string,
+    show: boolean,
     component_type: ComponentType,
     url?: string,
     translations?: Record<string, string>

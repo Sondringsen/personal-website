@@ -13,6 +13,9 @@ export default function TableOfContentBase() {
                 <Link href="/academic">Academic</Link>
             </li>
             <li>
+                <Link href="/projects">Projects</Link>
+            </li>
+            <li>
                 <Link href="/miscellaneous">Miscellaneous</Link>
             </li>
         </ul>
